@@ -91,7 +91,7 @@ function Flow() {
       if (shouldStop) break;
     }
     const payload = layers.map((e) => ({
-      torch_layer: e.id,
+      torch_layer: e.type,
       kwargs: e.data,
     }));
     setIsLoading(true);
